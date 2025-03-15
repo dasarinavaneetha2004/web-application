@@ -1,54 +1,71 @@
 # News Media Platform
 
-This is a backend application for a News Media Platform built using the MERN stack (MongoDB, Express, React, Node.js). The application allows users to view, add, and delete news articles.
+This is a simple news media platform built using the MERN stack (MongoDB, Express, React, Node.js). The application allows users to view, add, and delete news articles.
 
-## Table of Contents
+## Features
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
+- View a list of news articles
+- Add new articles through a form
+- Delete existing articles
 
-## Installation
+## Technologies Used
+
+- **Frontend**: React, React Router
+- **Backend**: Node.js, Express
+- **Database**: MongoDB
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed on your machine
+- MongoDB installed and running
+
+### Installation
 
 1. Clone the repository:
+
    ```
    git clone <repository-url>
    ```
 
-2. Navigate to the project directory:
+2. Navigate to the frontend directory:
+
    ```
-   cd news-media-backend
+   cd news-media-frontend
    ```
 
 3. Install the dependencies:
+
    ```
    npm install
    ```
 
-4. Create a `.env` file in the root directory and add your MongoDB connection string:
+4. Create a `.env` file in the root directory and add your API base URL:
+
    ```
-   MONGODB_URI=<your-mongodb-connection-string>
+   REACT_APP_API_URL=<your-api-url>
    ```
+
+### Running the Application
+
+1. Start the development server:
+
+   ```
+   npm start
+   ```
+
+2. Open your browser and go to `http://localhost:3000` to view the application.
 
 ## Usage
 
-To start the server, run the following command:
-```
-npm start
-```
-The server will run on `http://localhost:5000`.
-
-## API Endpoints
-
-- **GET** `/api/news` - Retrieve all news articles.
-- **POST** `/api/news` - Create a new news article. Requires a JSON body with `title`, `content`, and `author`.
-- **DELETE** `/api/news/:newsId` - Delete a news article by ID.
+- On the home page, you can see a list of articles.
+- Use the "Add Article" form to submit new articles.
+- Each article has a delete button to remove it from the list.
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
+Feel free to submit issues or pull requests to improve the project.
 
 ## License
 
